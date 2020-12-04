@@ -1,3 +1,64 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input, textarea, select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -84,7 +145,7 @@ header nav a:hover {
     top: 0;
     left: 0;
     box-sizing: border-box;
-    z-index: 3;
+    z-index: 1;
 
 }
 
@@ -96,3 +157,56 @@ header nav a:hover {
     margin-bottom: 30px;
 }
 
+.work-top {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+.work-top h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.work-top .filters a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+.work-top .filters .selected {
+    color: #FF58B2;
+    font-weight: 400;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gallery .artwork {
+    width: 32%;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+}
+
+.gallery .artwork h4{
+    font-size: 24px;
+    text-decoration: none !important;
+    margin-top: 5px;
+    color: black;
+    
+
+}
