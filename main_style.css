@@ -19,6 +19,14 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -77,6 +85,7 @@ html {
 
 h1 {
     font-size: 18px;
+    font-weight: ;
 }
 
 header {
@@ -181,6 +190,7 @@ header nav a:hover {
     text-decoration: none;
     margin-left: 10px;
     color: black;
+    font-weight: 400;
 }
 
 .work-top .filters .selected {
@@ -192,21 +202,24 @@ header nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 90px;
+    padding-right: 90px; */
+    margin: 0 auto;
+    max-width: 60%;
 }
 
 .gallery .artwork {
-    width: 32%;
-    margin-bottom: 2%; /* (100-32*3)/2 */
+    width: 400px;
+    margin-bottom: 50px;
     position: relative;
 }
 
 .gallery .artwork h4{
     font-size: 24px;
     text-decoration: none !important;
-    margin-top: 5px;
+    margin-top: 15px;
     color: black;
+    font-weight: 400;
     
 
 }
